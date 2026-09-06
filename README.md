@@ -49,29 +49,29 @@ The project follows the **MVVM (Model-View-ViewModel)** pattern with a **Reposit
 com.example.notesapp/
 ├── data/
 │   ├── local/
-│   │   ├── NoteEntity.kt          # Room entity (id, title, content)
-│   │   ├── NoteDao.kt             # Database access (CRUD operations)
-│   │   └── NotesDatabase.kt       # Room database definition
+│   │   ├── NoteEntity.kt
+│   │   ├── NoteDao.kt
+│   │   └── NotesDatabase.kt
 │   └── repository/
-│       ├── NotesRepository.kt      # Repository interface
-│       └── NotesRepositoryImpl.kt  # Repository implementation
+│       ├── NotesRepository.kt
+│       └── NotesRepositoryImpl.kt
 ├── navigation/
-│   └── AppNavigation.kt           # NavHost with route definitions
+│   └── AppNavigation.kt
 ├── ui/
 │   ├── addeditnote/
-│   │   ├── AddEditNoteScreen.kt   # Add/Edit note composable screen
-│   │   ├── AddEditNoteUiState.kt  # Screen state (title, content, errors)
-│   │   └── AddEditNoteViewModel.kt # Business logic for add/edit
+│   │   ├── AddEditNoteScreen.kt
+│   │   ├── AddEditNoteUiState.kt
+│   │   └── AddEditNoteViewModel.kt
 │   ├── notes/
-│   │   ├── NotesListScreen.kt     # Notes list composable screen
-│   │   ├── NotesListUiState.kt    # Screen state (Loading/Empty/Success)
-│   │   └── NotesListViewModel.kt  # Business logic for list + delete
+│   │   ├── NotesListScreen.kt
+│   │   ├── NotesListUiState.kt
+│   │   └── NotesListViewModel.kt
 │   └── theme/
-│       ├── Color.kt               # Copper Rose palette definitions
-│       ├── Theme.kt               # Material 3 light color scheme
-│       └── Type.kt                # Typography scale
-├── NotesApplication.kt            # Application class (DB + Repository init)
-└── MainActivity.kt                # Entry point (theme + navigation)
+│       ├── Color.kt
+│       ├── Theme.kt
+│       └── Type.kt
+├── NotesApplication.kt
+└── MainActivity.kt
 ```
 
 **Data flow:** `Room DAO → Repository → ViewModel (StateFlow) → Composable Screen (collectAsStateWithLifecycle)`
@@ -125,23 +125,18 @@ NotesApp/
 │       ├── main/
 │       │   ├── AndroidManifest.xml
 │       │   ├── java/com/example/notesapp/
-│       │   │   ├── data/local/          # Room database layer
-│       │   │   ├── data/repository/     # Repository pattern
-│       │   │   ├── navigation/          # Compose Navigation
-│       │   │   ├── ui/addeditnote/      # Add/Edit note screen
-│       │   │   ├── ui/notes/            # Notes list screen
-│       │   │   ├── ui/theme/            # Theme, colors, typography
+│       │   │   ├── data/local/
+│       │   │   ├── data/repository/
+│       │   │   ├── navigation/
+│       │   │   ├── ui/addeditnote/
+│       │   │   ├── ui/notes/
+│       │   │   ├── ui/theme/
 │       │   │   ├── MainActivity.kt
 │       │   │   └── NotesApplication.kt
-│       │   └── res/                     # Android resources
-│       ├── test/                        # Unit tests
-│       └── androidTest/                 # Instrumented tests
-├── gradle/
-│   ├── libs.versions.toml
-│   └── wrapper/
-├── build.gradle.kts
-├── settings.gradle.kts
-└── gradle.properties
+│       │   └── res/
+│       ├── test/
+│       └── androidTest/
+
 ```
 
 ---
