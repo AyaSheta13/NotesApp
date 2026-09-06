@@ -77,7 +77,7 @@ fun AddEditNoteScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = "Edit Note",
+                        text = if (uiState.isEditing) "Edit Note" else "Add Note",
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -195,7 +195,8 @@ private fun AddEditNoteScreenPreview() {
         AddEditNoteScreen(
             uiState = AddEditNoteUiState(
                 title = "My Note",
-                content = "This is the content of my note. It can be quite long and will wrap to multiple lines."
+                content = "This is the content of my note. It can be quite long and will wrap to multiple lines.",
+                isEditing = true
             ),
             onTitleChange = {},
             onContentChange = {},

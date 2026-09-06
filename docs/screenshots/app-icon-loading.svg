@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="500" viewBox="0 0 300 500">
-  <rect width="300" height="500" rx="12" fill="#f5f5f5"/>
-  <circle cx="150" cy="220" r="48" fill="#e8e8e8"/>
-  <text x="150" y="230" text-anchor="middle" font-family="sans-serif" font-size="36" fill="#A86065">&#9998;</text>
-  <circle cx="150" cy="300" r="16" fill="none" stroke="#A86065" stroke-width="3" stroke-dasharray="20 10"/>
-  <text x="150" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#666">Loading notes...</text>
-  <text x="150" y="495" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#bbb">PLACEHOLDER — Replace with actual screenshot</text>
-</svg>

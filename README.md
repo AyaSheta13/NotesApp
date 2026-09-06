@@ -80,37 +80,13 @@ com.example.notesapp/
 
 ## Screenshots
 
-> **Note:** The images below are placeholders. Replace them with actual application screenshots.
+| Empty Notes | Notes List |
+|---|---|
+| ![Empty Notes](docs/screenshots/empty-notes.jpg) | ![Notes List](docs/screenshots/notes-list.jpg) |
 
-### 1. Empty Notes Screen
-
-The main notes screen when no notes have been created yet. A sticky note icon and a prompt guide the user to tap the `+` button to create their first note.
-
-![Empty Notes Screen](docs/screenshots/empty-notes.svg)
-
-### 2. Notes List
-
-The main notes screen displaying multiple notes as color-coded cards. Each card shows the note title, a content preview, and a delete button. Cards cycle through six palette colors for visual variety.
-
-![Notes List](docs/screenshots/notes-list.svg)
-
-### 3. Add Note
-
-The screen used to create a new note. Contains a title field (required), a content field, and a checkmark FAB to save. The title field validates that it is not empty before saving.
-
-![Add Note](docs/screenshots/add-note.svg)
-
-### 4. Edit Note
-
-The screen used to edit an existing note. The same form is pre-populated with the note's current title and content. The back arrow navigates to the notes list after saving.
-
-![Edit Note](docs/screenshots/edit-note.svg)
-
-### 5. App Icon / Loading
-
-The loading screen displayed while notes are being fetched from the database. Shows a centered circular progress indicator in the Copper Rose accent color.
-
-![App Icon / Loading](docs/screenshots/app-icon-loading.svg)
+| Add Note | Edit Note |
+|---|---|
+| ![Add Note](docs/screenshots/add-note.jpg) | ![Edit Note](docs/screenshots/edit-note.jpg) |
 
 ---
 

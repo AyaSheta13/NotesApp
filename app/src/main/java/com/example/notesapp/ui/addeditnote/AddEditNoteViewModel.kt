@@ -27,7 +27,7 @@ class AddEditNoteViewModel(
 
     private val noteId: Int? = savedStateHandle.get<Int>("noteId")?.takeIf { it != -1 }
 
-    private val _uiState = MutableStateFlow(AddEditNoteUiState())
+    private val _uiState = MutableStateFlow(AddEditNoteUiState(isEditing = noteId != null))
     val uiState: StateFlow<AddEditNoteUiState> = _uiState.asStateFlow()
 
     private val _navigateBack = Channel<Unit>()
